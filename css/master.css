@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  background: rgba(253,238,135,1);
+  font-family: Arial, sans-serif;
+  font-size: 1.25rem;
+  }
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.grid-container {
+  display: grid;
+  grid-column: auto;
+}
+
+/* Start skjerm */
+.home {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  background: rgb(129,120,86);
+  background: linear-gradient(180deg,
+    rgba(129,120,86,1) 0%,
+    rgba(253,238,135,1) 100%);
+
+  background-image: url("../pic/hex.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+#splash {
+  display: block;
+  text-align: center;
+}
+
+#splash img {
+  width: 80%;
+  max-width: 40rem;
+  padding-top: 5rem;
+}
+
+.referanse {
+  text-align:center;
+  justify-content: center;
+}
+
+.social {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.social img {
+    box-sizing: border-box;
+  filter: grayscale(100%);
+  width: 4rem;
+  height: 4rem;
+  margin-left: 0.5rem;
+  background-color: lightgrey;
+  border: 0.1rem solid grey;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.social img:hover{
+  filter: grayscale(0%);
+  background-color: grey;
+  border: 0.1rem solid lightgrey;
+}
+
